@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="dialog-window" viewBox="0 0 353 191">
+    <rect x="1" y="1" width="351" height="189" fill="white"/>
+    <rect x="1" y="1" width="351" height="189" stroke="black" stroke-width="2"/>
+    <rect x="30" y="42" width="3" height="3" fill="black"/>
+    <rect x="30" y="45" width="3" height="3" fill="black"/>
+    <rect x="30" y="48" width="3" height="3" fill="black"/>
+    <rect x="30" y="51" width="3" height="3" fill="black"/>
+    <rect x="30" y="54" width="3" height="3" fill="black"/>
+    <rect x="30" y="57" width="3" height="3" fill="black"/>
+    <rect x="30" y="60" width="3" height="3" fill="black"/>
+    <rect x="30" y="63" width="3" height="3" fill="black"/>
+    <rect x="30" y="66" width="3" height="3" fill="black"/>
+    <rect x="30" y="69" width="3" height="3" fill="black"/>
+    <rect x="30" y="72" width="3" height="3" fill="black"/>
+    <rect x="30" y="75" width="3" height="3" fill="black"/>
+    <rect x="30" y="78" width="3" height="3" fill="black"/>
+    <rect x="63" y="42" width="3" height="3" transform="rotate(90 63 42)" fill="black"/>
+    <rect x="60" y="42" width="3" height="3" transform="rotate(90 60 42)" fill="black"/>
+    <rect x="57" y="42" width="3" height="3" transform="rotate(90 57 42)" fill="black"/>
+    <rect x="54" y="42" width="3" height="3" transform="rotate(90 54 42)" fill="black"/>
+    <rect x="51" y="42" width="3" height="3" transform="rotate(90 51 42)" fill="black"/>
+    <rect x="48" y="42" width="3" height="3" transform="rotate(90 48 42)" fill="black"/>
+    <rect x="45" y="42" width="3" height="3" transform="rotate(90 45 42)" fill="black"/>
+    <rect x="42" y="42" width="3" height="3" transform="rotate(90 42 42)" fill="black"/>
+    <rect x="39" y="42" width="3" height="3" transform="rotate(90 39 42)" fill="black"/>
+    <rect x="36" y="42" width="3" height="3" transform="rotate(90 36 42)" fill="black"/>
+    <rect x="66" y="45" width="3" height="3" transform="rotate(90 66 45)" fill="black"/>
+    <rect x="39" y="48" width="3" height="3" transform="rotate(90 39 48)" fill="black"/>
+    <rect x="39" y="45" width="3" height="3" transform="rotate(90 39 45)" fill="black"/>
+    <rect x="39" y="51" width="3" height="3" transform="rotate(90 39 51)" fill="black"/>
+    <rect x="60" y="48" width="3" height="3" transform="rotate(90 60 48)" fill="black"/>
+    <rect x="60" y="45" width="3" height="3" transform="rotate(90 60 45)" fill="black"/>
+    <rect x="60" y="51" width="3" height="3" transform="rotate(90 60 51)" fill="black"/>
+    <rect x="54" y="48" width="3" height="3" transform="rotate(90 54 48)" fill="black"/>
+    <rect x="54" y="45" width="3" height="3" transform="rotate(90 54 45)" fill="black"/>
+    <rect x="54" y="51" width="3" height="3" transform="rotate(90 54 51)" fill="black"/>
+    <rect x="60" y="54" width="3" height="3" transform="rotate(90 60 54)" fill="black"/>
+    <rect x="57" y="54" width="3" height="3" transform="rotate(90 57 54)" fill="black"/>
+    <rect x="54" y="54" width="3" height="3" transform="rotate(90 54 54)" fill="black"/>
+    <rect x="51" y="54" width="3" height="3" transform="rotate(90 51 54)" fill="black"/>
+    <rect x="48" y="54" width="3" height="3" transform="rotate(90 48 54)" fill="black"/>
+    <rect x="45" y="54" width="3" height="3" transform="rotate(90 45 54)" fill="black"/>
+    <rect x="42" y="54" width="3" height="3" transform="rotate(90 42 54)" fill="black"/>
+    <rect x="39" y="54" width="3" height="3" transform="rotate(90 39 54)" fill="black"/>
+    <rect x="63" y="63" width="3" height="3" transform="rotate(90 63 63)" fill="black"/>
+    <rect x="60" y="63" width="3" height="3" transform="rotate(90 60 63)" fill="black"/>
+    <rect x="57" y="63" width="3" height="3" transform="rotate(90 57 63)" fill="black"/>
+    <rect x="54" y="63" width="3" height="3" transform="rotate(90 54 63)" fill="black"/>
+    <rect x="51" y="63" width="3" height="3" transform="rotate(90 51 63)" fill="black"/>
+    <rect x="48" y="63" width="3" height="3" transform="rotate(90 48 63)" fill="black"/>
+    <rect x="45" y="63" width="3" height="3" transform="rotate(90 45 63)" fill="black"/>
+    <rect x="42" y="63" width="3" height="3" transform="rotate(90 42 63)" fill="black"/>
+    <rect x="39" y="63" width="3" height="3" transform="rotate(90 39 63)" fill="black"/>
+    <rect x="63" y="66" width="3" height="3" transform="rotate(90 63 66)" fill="black"/>
+    <rect x="39" y="66" width="3" height="3" transform="rotate(90 39 66)" fill="black"/>
+    <rect x="63" y="69" width="3" height="3" transform="rotate(90 63 69)" fill="black"/>
+    <rect x="39" y="69" width="3" height="3" transform="rotate(90 39 69)" fill="black"/>
+    <rect x="63" y="72" width="3" height="3" transform="rotate(90 63 72)" fill="black"/>
+    <rect x="39" y="72" width="3" height="3" transform="rotate(90 39 72)" fill="black"/>
+    <rect x="39" y="75" width="3" height="3" transform="rotate(90 39 75)" fill="black"/>
+    <rect x="63" y="75" width="3" height="3" transform="rotate(90 63 75)" fill="black"/>
+    <rect x="66" y="78" width="3" height="3" transform="rotate(90 66 78)" fill="black"/>
+    <rect x="63" y="78" width="3" height="3" transform="rotate(90 63 78)" fill="black"/>
+    <rect x="60" y="78" width="3" height="3" transform="rotate(90 60 78)" fill="black"/>
+    <rect x="57" y="78" width="3" height="3" transform="rotate(90 57 78)" fill="black"/>
+    <rect x="54" y="78" width="3" height="3" transform="rotate(90 54 78)" fill="black"/>
+    <rect x="51" y="78" width="3" height="3" transform="rotate(90 51 78)" fill="black"/>
+    <rect x="48" y="78" width="3" height="3" transform="rotate(90 48 78)" fill="black"/>
+    <rect x="45" y="78" width="3" height="3" transform="rotate(90 45 78)" fill="black"/>
+    <rect x="42" y="78" width="3" height="3" transform="rotate(90 42 78)" fill="black"/>
+    <rect x="39" y="78" width="3" height="3" transform="rotate(90 39 78)" fill="black"/>
+    <rect x="36" y="78" width="3" height="3" transform="rotate(90 36 78)" fill="black"/>
+    <rect x="69" y="81" width="3" height="3" transform="rotate(-180 69 81)" fill="black"/>
+    <rect x="69" y="78" width="3" height="3" transform="rotate(-180 69 78)" fill="black"/>
+    <rect x="69" y="75" width="3" height="3" transform="rotate(-180 69 75)" fill="black"/>
+    <rect x="69" y="72" width="3" height="3" transform="rotate(-180 69 72)" fill="black"/>
+    <rect x="69" y="69" width="3" height="3" transform="rotate(-180 69 69)" fill="black"/>
+    <rect x="69" y="66" width="3" height="3" transform="rotate(-180 69 66)" fill="black"/>
+    <rect x="69" y="63" width="3" height="3" transform="rotate(-180 69 63)" fill="black"/>
+    <rect x="69" y="60" width="3" height="3" transform="rotate(-180 69 60)" fill="black"/>
+    <rect x="69" y="57" width="3" height="3" transform="rotate(-180 69 57)" fill="black"/>
+    <rect x="69" y="54" width="3" height="3" transform="rotate(-180 69 54)" fill="black"/>
+    <rect x="69" y="51" width="3" height="3" transform="rotate(-180 69 51)" fill="black"/>
+    <path d="M89 46.25V34H99.5V35.75H101.25V39.25H99.5V41H101.25V44.5H99.5V46.25H89ZM92.5 39.25H97.75V35.75H92.5V39.25ZM92.5 44.5H97.75V41H92.5V44.5ZM106.5 46.25V44.5H104.75V42.75H103V37.5H104.75V35.75H106.5V34H113.5V35.75H115.25V37.5H111.75V35.75H108.25V37.5H106.5V42.75H108.25V44.5H111.75V42.75H115.25V44.5H113.5V46.25H106.5ZM122.25 46.25V35.75H118.75V34H129.25V35.75H125.75V46.25H122.25ZM131 46.25V37.5H132.75V35.75H134.5V34H139.75V35.75H141.5V37.5H143.25V46.25H139.75V42.75H134.5V46.25H131ZM134.5 41H139.75V37.5H138V35.75H136.25V37.5H134.5V41ZM145 46.25V34H155.5V35.75H157.25V39.25H155.5V41H157.25V44.5H155.5V46.25H145ZM148.5 39.25H153.75V35.75H148.5V39.25ZM148.5 44.5H153.75V41H148.5V44.5ZM159 46.25V34H162.5V37.5H169.5V39.25H171.25V44.5H169.5V46.25H159ZM162.5 44.5H167.75V39.25H162.5V44.5ZM178.25 46.25V35.75H174.75V34H185.25V35.75H181.75V46.25H178.25ZM187 46.25V34H199.25V35.75H190.5V39.25H197.5V41H190.5V44.5H199.25V46.25H187ZM89 69V65.5H90.75V62H92.5V55H101.25V65.5H103V69H99.5V67.25H92.5V69H89ZM94.25 65.5H97.75V56.75H94.25V65.5ZM103 67.25V55H106.5V62H108.25V60.25H110V58.5H111.75V55H115.25V67.25H111.75V62H110V63.75H108.25V65.5H106.5V67.25H103ZM120.5 67.25V65.5H118.75V63.75H117V58.5H118.75V56.75H120.5V55H127.5V56.75H129.25V58.5H125.75V56.75H122.25V58.5H120.5V63.75H122.25V65.5H125.75V63.75H129.25V65.5H127.5V67.25H120.5ZM136.25 58.5H138V60.25H139.75V62H141.5V65.5H143.25V67.25H139.75V65.5H138V62H134.5V67.25H131V55H134.5V60.25H136.25V58.5ZM143.25 55V56.75H141.5V58.5H138V56.75H139.75V55H143.25ZM145 67.25V55H157.25V56.75H148.5V60.25H155.5V62H148.5V65.5H157.25V67.25H145ZM164.25 67.25V56.75H160.75V55H171.25V56.75H167.75V67.25H164.25ZM174.75 67.25V65.5H173V63.75H176.5V65.5H181.75V62H174.75V60.25H173V55H176.5V60.25H181.75V55H185.25V65.5H183.5V67.25H174.75ZM188.75 69V67.25H190.5V63.75H194V67.25H192.25V69H188.75ZM223.75 67.25V62H216.75V60.25H215V55H218.5V60.25H223.75V55H227.25V67.25H223.75ZM234.25 67.25V56.75H230.75V55H241.25V56.75H237.75V67.25H234.25ZM244.75 67.25V65.5H243V56.75H244.75V55H253.5V56.75H255.25V65.5H253.5V67.25H244.75ZM246.5 65.5H251.75V56.75H246.5V65.5ZM257 67.25V55H267.5V56.75H260.5V60.25H267.5V62H269.25V65.5H267.5V67.25H257ZM260.5 65.5H265.75V62H260.5V65.5ZM271 67.25V55H274.5V58.5H278V67.25H271ZM279.75 67.25V55H283.25V67.25H279.75ZM274.5 65.5H276.25V60.25H274.5V65.5ZM89 88.25V76H101.25V88.25H97.75V77.75H92.5V88.25H89ZM103 88.25V76H113.5V77.75H115.25V83H113.5V84.75H106.5V88.25H103ZM106.5 83H111.75V77.75H106.5V83ZM118.75 88.25V86.5H117V77.75H118.75V76H127.5V77.75H129.25V86.5H127.5V88.25H118.75ZM120.5 86.5H125.75V77.75H120.5V86.5ZM131 90V86.5H132.75V83H134.5V76H143.25V86.5H145V90H141.5V88.25H134.5V90H131ZM136.25 86.5H139.75V77.75H136.25V86.5ZM146.75 88.25V86.5H145V77.75H146.75V76H155.5V77.75H157.25V86.5H155.5V88.25H146.75ZM148.5 86.5H153.75V77.75H148.5V86.5ZM159 88.25V84.75H160.75V83H162.5V76H171.25V88.25H167.75V77.75H164.25V86.5H162.5V88.25H159ZM176.5 76V81.25H174.75V79.5H173V76H176.5ZM180 81.25H181.75V83H180V88.25H178.25V83H176.5V81.25H178.25V76H180V81.25ZM185.25 76V79.5H183.5V81.25H181.75V76H185.25ZM174.75 83H176.5V88.25H173V84.75H174.75V83ZM181.75 88.25V83H183.5V84.75H185.25V88.25H181.75ZM187 88.25V76H190.5V83H192.25V81.25H194V79.5H195.75V76H199.25V88.25H195.75V83H194V84.75H192.25V86.5H190.5V88.25H187ZM206.25 88.25V77.75H202.75V76H213.25V77.75H209.75V88.25H206.25ZM215 88.25V76H218.5V79.5H225.5V81.25H227.25V86.5H225.5V88.25H215ZM218.5 86.5H223.75V81.25H218.5V86.5Z" fill="black"/>
+    <rect x="31" y="124" width="291" height="36" fill="white"/>
+    <rect x="31" y="124" width="291" height="36" stroke="black" stroke-width="2"/>
+    <path d="M164.25 147.75V146H162.5V137.25H164.25V135.5H173V137.25H174.75V146H173V147.75H164.25ZM166 146H171.25V137.25H166V146ZM181.75 139H183.5V140.75H185.25V142.5H187V146H188.75V147.75H185.25V146H183.5V142.5H180V147.75H176.5V135.5H180V140.75H181.75V139ZM188.75 135.5V137.25H187V139H183.5V137.25H185.25V135.5H188.75Z" fill="black"/>
+  </symbol>
+</svg>

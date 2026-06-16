@@ -1,0 +1,81 @@
+@keyframes heart-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button {
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color, #000);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
+}
+
+.card__icon-button {
+  transition: outline 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--accent-color, #000);
+  outline-offset: -2px;
+}
+
+.like-icon .heart-frame {
+  display: none;
+}
+
+.like-icon .heart-frame-1 {
+  display: block;
+}
+
+.like-icon:hover .heart-frame-1 {
+  display: none;
+}
+
+.like-icon:hover .heart-frame-2 {
+  display: block;
+}
+
+.like-icon:active .heart-frame-2 {
+  display: none;
+}
+
+.like-icon:active .heart-frame-3 {
+  display: block;
+}
+
+.like-icon.is-liked .heart-frame-3 {
+  display: none;
+}
+
+.like-icon.is-liked .heart-frame-4 {
+  display: block;
+  animation: heart-scale 0.3s ease-in 0.1s 1;
+  transform-origin: center;
+}
