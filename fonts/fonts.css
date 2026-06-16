@@ -4,7 +4,7 @@
     local('Inter'),
     url('./Inter-Variable.woff2') format('woff2-variations'),
     url('./Inter-Variable.woff2') format('woff2 supports variations');
-  font-weight: 400 700;
+  font-weight: 400 785;
   font-display: swap;
 }
 
