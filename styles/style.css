@@ -83,7 +83,15 @@
   opacity: 0.5;
   width: auto;
   height: auto;
-  filter: drop-shadow(0 0 0 1px #fff);
+  text-shadow: 0 0 5px #fff;
+}
+
+@supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--bg-color, #fff);
+    text-stroke: 1px var(--bg-color, #fff);
+    text-shadow: none;
+  }
 }
 
 .card__text {
