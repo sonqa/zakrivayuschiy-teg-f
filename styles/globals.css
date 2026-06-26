@@ -59,10 +59,7 @@ svg {
   outline: none;
 }
 
-:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-}
+/* Универсальный focus-visible убран — стилизуем только там, где нужно */
 
 ul,
 ol {
