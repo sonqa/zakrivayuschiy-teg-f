@@ -59,8 +59,6 @@ svg {
   outline: none;
 }
 
-/* Универсальный focus-visible убран — стилизуем только там, где нужно */
-
 ul,
 ol {
   list-style: none;

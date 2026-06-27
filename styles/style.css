@@ -181,7 +181,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--accent-color, #000);
@@ -211,15 +211,14 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  position: relative;  /* ← ДОБАВИТЬ */
-  overflow: hidden;    /* ← ДОБАВИТЬ */
-     
+  position: relative;
+  overflow: hidden;
 }
 
 .card__like-button::before {
   content: '';
   position: absolute;
-  top: 1px;       /* ← СДВИГ ВНИЗ (положительное значение) */
+  top: 1px;
   left: 0;
   width: 100%;
   height: 35px;
@@ -227,7 +226,6 @@
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
   z-index: 1;
-  
 }
 
 .card__like-button:hover::before {
@@ -236,8 +234,8 @@
 
 .card__like-button .like-svg,
 .card__like-button .unlike-svg {
-  position: relative;  /* ← ДОБАВИТЬ */
-  z-index: 2;          /* ← ДОБАВИТЬ */
+  position: relative;
+  z-index: 2;
   display: block;
   width: 118px;
   height: 38px;
@@ -286,20 +284,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
 }
 
-.footer__save-button .button__icon {
-  width: 21px;
-  height: 21px;
+.footer__save-button .desktop-svg {
+  display: block;
+  width: 335px;
+  height: 55px;
 }
 
-.footer__save-button:hover .button__icon {
-  filter: brightness(0) invert(1);
+.footer__save-button .mobile-svg {
+  display: none;
 }
 
 .footer__save-button:focus {
@@ -353,16 +352,15 @@
   border: none;
   padding: 0 0px;
   margin: -85px auto 0 auto;
-  background: transparent;  
+  background: transparent;
 }
 
-/* ========== LIKE ICON ========== */
 .like-icon {
   width: 39px;
   height: 36px;
   display: block;
   position: relative;
-  transform: translateX(15px); 
+  transform: translateX(15px);
 }
 
 .like-icon .heart-frame {
@@ -375,12 +373,10 @@
   transition: opacity 0.3s ease;
 }
 
-/* === Исходное состояние === */
 .like-icon .heart-frame-1 {
   opacity: 1;
 }
 
-/* === Ховер-эффект (ПОЛНОСТЬЮ ЧЕРНОЕ) === */
 .like-icon:hover .heart-frame-1 {
   opacity: 0;
 }
@@ -388,7 +384,6 @@
   opacity: 1;
 }
 
-/* === Зажать сердечко (active) === */
 .like-icon:active .heart-hover-2 {
   opacity: 0;
 }
@@ -429,7 +424,6 @@
   }
 }
 
-/* === Лайк поставлен === */
 .like-icon.is-liked .heart-hover-1,
 .like-icon.is-liked .heart-hover-2,
 .like-icon.is-liked .heart-active-1,
@@ -445,7 +439,6 @@
   transform-origin: center;
 }
 
-/* === Ховер на is-liked === */
 .like-icon.is-liked:hover .heart-frame-4 {
   opacity: 0;
 }
@@ -468,7 +461,6 @@
   }
 }
 
-/* ========== IMAGE FILTERS ========== */
 .image-filter-brownish {
   filter: sepia(0.6) brightness(0.9);
 }
@@ -497,7 +489,6 @@
   filter: hue-rotate(30deg) saturate(1.8) contrast(1.2) brightness(1.1);
 }
 
-/* ========== MEDIA QUERIES ========== */
 @media (width <= 375px) {
   .page {
     padding-block-start: 50px;
@@ -547,22 +538,47 @@
     font-size: 12px;
   }
 
-  .footer__save-button .button__icon {
-    width: 18px;
-    height: 18px;
-  }
-
   .dialog {
     max-inline-size: 320px;
   }
 
   .dialog__container {
-    padding: 25px;
+    padding: 20px;
   }
 
   .dialog__text-pixel {
     width: 250px;
     height: 54px;
   }
-  
+
+  .dialog__ok-button {
+    min-inline-size: 200px;
+    block-size: 28px;
+    margin: -70px auto 0 auto;
+    font-size: 12px;
+  }
+
+  .footer__save-button.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    gap: 0 !important;
+    min-inline-size: auto !important;
+    block-size: auto !important;
+    border: none !important;
+    background: transparent !important;
+    overflow: visible !important;
+  }
+
+  .footer__save-button .desktop-svg {
+    display: none !important;
+  }
+
+  .footer__save-button .mobile-svg {
+    display: block !important;
+    width: 306px;
+    max-width: 100%;
+    height: auto;
+  }
 }
