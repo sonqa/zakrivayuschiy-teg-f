@@ -28,6 +28,7 @@
     </header>
 
     <main>
+      <!-- Карточка 1 -->
       <article class="card">
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__image-wrapper">
@@ -39,34 +40,24 @@
           <p>Уже представляю, как создаю красивые сайты за 5 минут. Эх, если бы я знал, что меня ждёт впереди...</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 2 -->
       <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-wrapper">
@@ -78,34 +69,24 @@
           <p>После часа экспериментов всё встало на свои места. Оказывается, нужно просто добавить display: flex и понять родитель-ребёнок.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 3 -->
       <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-wrapper">
@@ -117,34 +98,24 @@
           <p>Понял, что grid-template-areas — это магия. Теперь сайты с нестандартной сеткой мне по плечу.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 4 -->
       <article class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-wrapper">
@@ -156,34 +127,24 @@
           <p>Когда разобрался с z-index и понял, как работает stacking context, пришло облегчение. Теперь я могу расположить что угодно где угодно.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 5 -->
       <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image-wrapper">
@@ -195,34 +156,24 @@
           <p>Оказалось, что clamp() и относительные единицы — мои лучшие друзья. И больше никаких фиксированных ширин.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 6 -->
       <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image-wrapper">
@@ -234,34 +185,24 @@
           <p>Но самое крутое — это анимация сердечка. Как здорово, что можно так точно управлять временем и последовательностью.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 7 -->
       <article class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image-wrapper">
@@ -273,34 +214,24 @@
           <p>Иногда бывают остановки и трудности, но главное — не сходить с выбранного пути.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
 
+      <!-- Карточка 8 -->
       <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-wrapper">
@@ -312,30 +243,19 @@
           <p>Спасибо тем, кто читал мои заметки и поддерживал. Вёрстка — это только начало большого пути в IT.</p>
         </div>
         <div class="card__footer">
-          <button class="card__icon-button" type="button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
-              <use class="heart-frame heart-frame-1" href="./images/heart.svg#heart-1"></use>
-              <use class="heart-frame heart-frame-3" href="./images/heart.svg#heart-3"></use>
-              <use class="heart-frame heart-frame-4" href="./images/heart.svg#heart-4"></use>
-              <use class="heart-frame heart-frame-5" href="./images/heart.svg#heart-5"></use>
-              <use class="heart-frame heart-frame-6" href="./images/heart.svg#heart-6"></use>
-              <use class="heart-frame heart-hover-1" href="./images/heart-hover.svg#heart-hover-1"></use>
-              <use class="heart-frame heart-hover-2" href="./images/heart-hover.svg#heart-hover-2"></use>
-              <use class="heart-frame heart-active-1" href="./images/heart-active-1.svg"></use>
-              <use class="heart-frame heart-active-2" href="./images/heart-active-2.svg"></use>
+          <button type="button" class="card__icon-button" aria-labelledby="like-button-04">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="heart">
+                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 27h-3v3h3v-3ZM21 9h-3v3h3V9Z" />
+                <path class="main-body" fill="none" d="M12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM12 15H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM27 15h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 21h-3v3h3v-3ZM21 24h-3v3h3v-3Z" />
+                <path class="core" d="M18 15h-3v3h3v-3ZM21 15h3v3h-3v-3ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z" />
+              </g>
+              <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3Z" />
             </svg>
           </button>
           <button class="button card__like-button" type="button" data-liked="false">
-            <svg class="like-svg" width="130" height="38" viewBox="0 0 130 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="128" height="36" fill="white"/>
-              <rect x="1" y="1" width="128" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V12.5H42.25V23H49.25V24.75H38.75ZM56.25 14.25V12.5H59.75V14.25H56.25ZM52.75 24.75V23H56.25V17.75H54.5V16H59.75V23H63.25V24.75H52.75ZM65 24.75V12.5H68.5V19.5H72V17.75H73.75V16H77.25V17.75H75.5V19.5H73.75V21.25H75.5V23H77.25V24.75H73.75V23H72V21.25H68.5V24.75H65ZM80.75 24.75V23H79V17.75H80.75V16H89.5V17.75H91.25V21.25H82.5V23H89.5V24.75H80.75ZM82.5 19.5H87.75V17.75H82.5V19.5Z" fill="black"/>
-            </svg>
-            <svg class="unlike-svg" width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
-              <rect x="1" y="1" width="168" height="36" fill="white"/>
-              <rect x="1" y="1" width="168" height="36" stroke="black" stroke-width="2"/>
-              <path d="M38.75 24.75V23H37V12.5H40.5V23H45.75V12.5H49.25V23H47.5V24.75H38.75ZM51 24.75V16H61.5V17.75H63.25V24.75H59.75V17.75H54.5V24.75H51ZM66.75 24.75V23H70.25V14.25H68.5V12.5H73.75V23H77.25V24.75H66.75ZM84.25 14.25V12.5H87.75V14.25H84.25ZM80.75 24.75V23H84.25V17.75H82.5V16H87.75V23H91.25V24.75H80.75ZM93 24.75V12.5H96.5V19.5H100V17.75H101.75V16H105.25V17.75H103.5V19.5H101.75V21.25H103.5V23H105.25V24.75H101.75V23H100V21.25H96.5V24.75H93ZM108.75 24.75V23H107V17.75H108.75V16H117.5V17.75H119.25V21.25H110.5V23H117.5V24.75H108.75ZM110.5 19.5H115.75V17.75H110.5V19.5Z" fill="black"/>
-            </svg>
+            <span class="button__text like-text">Like</span>
+            <span class="button__text unlike-text">Unlike</span>
           </button>
         </div>
       </article>
@@ -530,42 +450,6 @@
       </dialog>
 
     <script src="./scripts/like.js"></script>
-    <script>
-      document.querySelectorAll('.card__like-button').forEach(button => {
-        button.addEventListener('click', function(e) {
-          e.stopPropagation();
-          
-          const isLiked = this.dataset.liked === 'true';
-          const likeSvg = this.querySelector('.like-svg');
-          const unlikeSvg = this.querySelector('.unlike-svg');
-          const icon = this.closest('.card').querySelector('.like-icon');
-          
-          if (isLiked) {
-            likeSvg.style.display = 'block';
-            unlikeSvg.style.display = 'none';
-            this.dataset.liked = 'false';
-            if (icon) icon.classList.remove('is-liked');
-          } else {
-            likeSvg.style.display = 'none';
-            unlikeSvg.style.display = 'block';
-            this.dataset.liked = 'true';
-            if (icon) icon.classList.add('is-liked');
-          }
-        });
-      });
 
-      const saveButton = document.querySelector('.footer__save-button');
-      const modal = document.querySelector('.dialog');
-      const closeButton = document.querySelector('.dialog__ok-button');
-
-      if (saveButton && modal && closeButton) {
-        saveButton.addEventListener('click', () => {
-          modal.showModal();
-        });
-        closeButton.addEventListener('click', () => {
-          modal.close();
-        });
-      }
-    </script>
   </body>
 </html>
