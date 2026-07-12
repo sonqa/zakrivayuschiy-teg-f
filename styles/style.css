@@ -1,35 +1,3 @@
-:root {
-  --contour-color: #000;
-  --animation-fill-color: rgb(255 0 0);
-}
-
-@keyframes left-right {
-  from {
-    translate: calc(-100% - 8px) -50%;
-  }
-  to {
-    translate: calc(-100% - 4px) -50%;
-  }
-}
-
-@keyframes change-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes change-scale {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.25);
-  }
-}
-
 .like-icon {
   transform-origin: center;
   cursor: pointer;
@@ -137,23 +105,23 @@
 }
 
 .header__logo {
-  font-family: 'Press Start 2P', var(--font-accent);
+  font-family: var(--font-accent, 'Press Start 2P', fantasy);
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(20px, 8vw, 65px);
+  font-size: clamp(49px, 6vw, 65px);
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: uppercase;
-  color: var(--Themes-mainColor, #000000);
-  -webkit-text-stroke: 1px var(--Themes-background, #FFFFFF);
-  text-stroke: 1px var(--Themes-background, #FFFFFF);
+  vertical-align: bottom;
+  color: var(--accent-color, #000000);
   opacity: 1;
   white-space: nowrap;
   display: inline-block;
+  max-width: 100%;
 }
 
 .header__title {
-  font-family: var(--font-accent, 'PressStart2P');
+  font-family: var(--font-accent, 'Press Start 2P', fantasy);
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
@@ -179,7 +147,8 @@
 .card__title {
   font-size: 18px;
   font-variation-settings: 'wght' var(--title-weight, 715);
-  padding: 5px 10px;
+  padding: 6px 10px;
+  align-items: center;
 }
 
 .card__image-wrapper {
@@ -203,18 +172,15 @@
   top: 25px;
   right: 25px;
   opacity: 0.5;
-  font-family: 'Press Start 2P', var(--font-accent);
+  font-family: var(--font-accent, 'Press Start 2P', fantasy);
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: uppercase;
-  color: var(--Themes-mainColor, #000000);
-  -webkit-text-stroke: 1px var(--Themes-background, #FFFFFF);
-  text-stroke: 1px var(--Themes-background, #FFFFFF);
-  width: 98px;
-  height: 14px;
+  color: var(--accent-color, #000000);
+  text-shadow: 0 0 5px #fff;
 }
 
 @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
@@ -251,7 +217,7 @@
   cursor: pointer;
   padding: 0;
   transition: border 0.3s ease;
-  width: 38px;
+  width: auto;
   height: 38px;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -271,9 +237,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color:#000;
   background-color: var(--bg-color, #fff);
-  font-family: var(--font-accent, 'PressStart2P');
+  font-family: var(--font-accent, 'Press Start 2P', fantasy);
   font-size: 14px;
   cursor: pointer;
   position: relative;
@@ -315,7 +280,6 @@
   z-index: 2;
   mix-blend-mode: difference;
   color: #fff;
-  fill: #fff;
 }
 
 .card__like-button {
@@ -323,150 +287,24 @@
   height: 38px;
   padding: 9px 17px;
   gap: 10px;
-  border: 2px solid var(--accent-color, #000);
-  background-color: var(--bg-color, #fff);
-  font-family: 'Press Start 2P', var(--font-accent);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 90%;
-  color: var(--accent-color, #000);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  transition: box-shadow 0.3s ease;
   flex-shrink: 0;
-}
-
-.card__like-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
-}
-
-.card__like-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color, #000);
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(-100%);
-  z-index: 1;
-}
-
-.card__like-button:hover::before {
-  transform: translateX(0);
-}
-
-.card__like-button .button__text {
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: difference;
-  color: #fff;
-}
-
-.card__like-button .like-text {
-  display: block;
-}
-
-.card__like-button .unlike-text {
-  display: none;
-}
-
-.card__like-button[data-liked="true"] .like-text {
-  display: none;
-}
-
-.card__like-button[data-liked="true"] .unlike-text {
-  display: block;
 }
 
 .footer {
   margin-block-start: 50px;
+  margin-block-end: 100px;
   display: flex;
   justify-content: center;
 }
 
 .footer__save-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
   height: 55px;
   padding: 15px 20px;
-  border: 2px solid var(--accent-color, #000);
-  background-color: var(--bg-color, #fff);
-  font-family: var(--font-accent, 'PressStart2P');
-  font-size: 14px;
-  cursor: pointer;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-  overflow: hidden;
-  box-sizing: border-box;
-  opacity: 1;
-}
-
-.footer__save-button:focus {
-  outline: none;
-}
-
-.footer__save-button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
-}
-
-.footer__save-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color, #000);
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-  z-index: 1;
-}
-
-.footer__save-button:hover::before {
-  transform: translateX(0);
 }
 
 .footer__save-button .floppy-icon {
-  position: relative;
-  z-index: 2;
   width: 21px;
   height: 21px;
-  flex-shrink: 0;
-  color: #000;
-  transition: color 0.5s ease;
-}
-
-.footer__save-button:hover .floppy-icon {
-  color: #fff;
-}
-
-.footer__save-button .button__text {
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: difference;
-  color: #fff;
-  font-family: 'Press Start 2P', var(--font-accent);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 90%;
-  display: flex;
-  align-items: center;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  opacity: 1;
-  white-space: nowrap;
 }
 
 .dialog {
@@ -491,7 +329,6 @@
   width: 353px;
   height: 191px;
   box-sizing: border-box;
-  opacity: 1;
 }
 
 .dialog__content {
@@ -508,12 +345,12 @@
 }
 
 .dialog__text {
-  font-family: 'Press Start 2P', var(--font-accent);
+  font-family: var(--font-accent, 'Press Start 2P', fantasy);
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--accent-color, #000);
   margin: 0;
@@ -523,181 +360,7 @@
   width: 293px;
   height: 38px;
   padding: 9px 17px;
-  border: 2px solid var(--accent-color, #000);
-  background-color: var(--bg-color, #fff);
-  font-family: var(--font-accent, 'PressStart2P');
-  font-size: 14px;
-  cursor: pointer;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-  overflow: hidden;
-  box-sizing: border-box;
   margin: 0 auto;
-}
-
-.dialog__ok-button:focus {
-  outline: none;
-}
-
-.dialog__ok-button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
-}
-
-.dialog__ok-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color, #000);
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(-100%);
-  z-index: 1;
-}
-
-.dialog__ok-button:hover::before {
-  transform: translateX(0);
-}
-
-.dialog__ok-button .button__text {
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: difference;
-  color: #fff;
-}
-
-.like-icon {
-  width: 39px;
-  height: 36px;
-  display: block;
-  position: relative;
-}
-
-.like-icon .heart-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.like-icon .heart-frame-1 {
-  opacity: 1;
-}
-
-.like-icon:hover .heart-frame-1 {
-  opacity: 0;
-}
-.like-icon:hover .heart-hover-2 {
-  opacity: 1;
-}
-
-.like-icon:active .heart-hover-2 {
-  opacity: 0;
-}
-.like-icon:active .heart-active-1 {
-  opacity: 1;
-  animation: heart-active-fade 0.6s ease-in-out 1 forwards;
-}
-.like-icon:active .heart-active-2 {
-  opacity: 0;
-  transition: opacity 0.3s ease 0.6s;
-}
-.like-icon:active .heart-active-1 {
-  opacity: 0;
-  transition: opacity 0.3s ease 0.6s;
-}
-.like-icon:active .heart-active-2 {
-  opacity: 1;
-}
-
-@keyframes heart-active-fade {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  70% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
-
-.like-icon.is-liked .heart-hover-1,
-.like-icon.is-liked .heart-hover-2,
-.like-icon.is-liked .heart-active-1,
-.like-icon.is-liked .heart-active-2,
-.like-icon.is-liked .heart-frame-3,
-.like-icon.is-liked .heart-frame-5,
-.like-icon.is-liked .heart-frame-6 {
-  opacity: 0;
-}
-.like-icon.is-liked .heart-frame-4 {
-  opacity: 1;
-  animation: heart-beat 0.5s ease-in-out 0.1s 1;
-  transform-origin: center;
-}
-
-.like-icon.is-liked:hover .heart-frame-4 {
-  opacity: 0;
-}
-.like-icon.is-liked:hover .heart-hover-2 {
-  opacity: 1;
-}
-
-@keyframes heart-beat {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.3);
-  }
-  60% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.image-filter-brownish {
-  filter: sepia(0.6) brightness(0.9);
-}
-
-.image-filter-neon {
-  filter: brightness(1.4) contrast(1.5) saturate(2) hue-rotate(80deg);
-}
-
-.image-filter-purple {
-  filter: brightness(0.7) saturate(1.8) hue-rotate(270deg);
-}
-
-.image-filter-green {
-  filter: hue-rotate(90deg) saturate(1.5) brightness(0.9);
-}
-
-.image-filter-brown {
-  filter: sepia(0.8) contrast(1.1) brightness(0.85);
-}
-
-.image-filter-blur {
-  filter: blur(3px);
-}
-
-.image-filter-orange-green {
-  filter: hue-rotate(30deg) saturate(1.8) contrast(1.2) brightness(1.1);
 }
 
 @media (width <= 375px) {
@@ -708,31 +371,14 @@
   .header {
     min-block-size: auto;
     padding: 60px 20px;
-    width: 375px;
-    height: 327px;
+    width: 100%;
+    min-height: 327px;
     max-width: 375px;
     box-sizing: border-box;
   }
 
-  .header__logo {
-    font-size: 49px;
-    transform: scale(0.5);
-    transform-origin: center;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
-  }
-
   .header__title {
-    font-size: 12px;
-  }
-
-  .card__title {
-    padding: 10px 10px 0 10px;
-  }
-
-  .card__text {
-    padding: 15px;
+    font-size: 14px;
   }
 
   .card__footer {
@@ -740,76 +386,43 @@
     gap: 10px;
   }
 
-  .button {
-    padding: 10px 15px;
-    font-size: 12px;
+  .card__label {
+    width: 98px;
+    height: 14px;
+    top: 25px;
+    right: 25px;
+    font-size: 14px;
+  }
+
+  .card__text {
+    padding: 25px 25px 0 25px;
   }
 
   .card__like-button {
-    width: 100px;
-    height: 34px;
-    padding: 9px 15px;
-    font-size: 12px;
-  }
-
-  .card__like-button .button__text {
-    font-size: 12px;
-  }
-
-  .card__like-button .like-text,
-  .card__like-button .unlike-text {
-    width: 48px;
-    height: 11px;
-  }
-
-  .card__label {
-    top: 15px;
-    right: 15px;
-    font-size: 18px;
+    margin-right: 25px;
   }
 
   .dialog {
     max-inline-size: 341px;
-    width: 100%;
   }
 
   .dialog__container {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: var(--bg-color, #fff);
-    border: 2px solid var(--accent-color, #000);
     width: 341px;
-    height: auto;
     min-height: 191px;
-    box-sizing: border-box;
-    opacity: 1;
-  }
-
-  .dialog__text {
-    font-size: 14px;
-    line-height: 150%;
   }
 
   .dialog__ok-button {
     width: 261px;
-    height: 38px;
   }
 
   .footer__save-button {
-    width: 306px;
-    height: 84px;
-    gap: 8px;
-    padding: 17px 20px 39px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    border: 2px solid var(--accent-color, #000);
-    background-color: var(--bg-color, #fff);
-    box-sizing: border-box;
-    position: relative;
+    justify-content: center;
+    width: 306px;
+    padding: 17px 20px 39px 20px;
   }
 
   .footer__save-button .floppy-icon {
@@ -817,30 +430,9 @@
     height: 28px;
     margin-top: 8px;
     margin-bottom: 4px;
-    position: relative;
-    z-index: 2;
-    color: #000;
-  }
-
-  .footer__save-button:hover .floppy-icon {
-    color: #fff;
   }
 
   .footer__save-button .button__text {
     font-size: 12px;
-    white-space: normal;
-    text-align: center;
-    line-height: 90%;
-    position: relative;
-    z-index: 2;
-    mix-blend-mode: difference;
-    color: #fff;
-    font-family: 'Press Start 2P', var(--font-accent);
-    font-weight: 400;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    opacity: 1;
-    margin-top: 0;
   }
 }

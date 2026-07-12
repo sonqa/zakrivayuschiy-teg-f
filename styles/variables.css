@@ -1,6 +1,6 @@
 :root {
   --font-main: 'Inter', sans-serif;
-  --font-accent: 'PressStart2P';
+  --font-accent: 'PressStart2P', fantasy;
   --text-weight: 410;
   --title-weight: 715;
   --bg-color: #fff;
@@ -8,6 +8,8 @@
   --stroke-color: #d3d3d3;
   --heart-contour: #000;
   --heart-fill: #ff0000;
+  --contour-color: #000;
+  --animation-fill-color: rgb(255 0 0);
   --content-width: clamp(375px, 50vw, 696px);
   --bg-gradient: 
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
